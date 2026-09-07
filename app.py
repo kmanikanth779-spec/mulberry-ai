@@ -1143,21 +1143,7 @@ def load_model():
     )
 
 
-try:
-
-    model = load_model()
-
-except Exception as e:
-
-    st.error(
-        "Model could not be loaded."
-    )
-
-    st.code(
-        str(e)
-    )
-
-    st.stop()
+model = None
 
 
 # ============================================================

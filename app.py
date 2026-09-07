@@ -2000,6 +2000,8 @@ if uploaded:
     # ORIGINAL MODEL PREDICTION
     # ========================================================
 
+    model = load_model()
+
     preds = model.predict(
         img_array
     )
